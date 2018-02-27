@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Санаров](https://up.htmlacademy.ru/htmlcss/20/user/284431).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
