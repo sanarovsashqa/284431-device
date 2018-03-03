@@ -8,9 +8,9 @@
   </head>
   <body>
 
-    <header class="header">
+    <header class="page-header">
       <a class="logo logo_black" href="index.html">DEVICE</a>
-      <form class="search-form">
+      <form class="search-form" action="" method="get">
         <input class="search-form__input" type="text" placeholder="Поиск по сайту">
         <button class="search-form__button" type="submit">Найти</button>
       </form>
@@ -30,28 +30,26 @@
         <ul class="nav__list">
           <li class="nav__item">
             <button class="nav__btn" type="button">Каталог товаров</button>
-            <div class="nav-catalog">
-              <ul class="nav-catalog__list">
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Умные часы</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="nav-catalog">
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">Умные часы</a>
+              </li>
+              <li class="nav-catalog__item">
+                <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Доставка</a>
@@ -66,7 +64,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main class="page-content">
       <h1 class="title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
@@ -82,27 +80,29 @@
         <h2 class="filter__title">Фильтр:</h2>
       </section>
 
+      <section class="sort">
+        <h2 class="sort__title">Сортировка:</h2>
+        <ul class="sort__list">
+          <li class="sort__item">
+            <a class="sort__link sort__link_price" href="#">По цене</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link sort__link_type" href="#">По типу</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link sort__link_popular" href="#">По популярности</a>
+          </li>
+        </ul>
+        <ul class="sort__list">
+          <li class="sort__item">
+            <a class="sort__link sort__link_inc" href="#">Возрастание</a>
+          </li>
+          <li class="sort__item">
+            <a class="sort__link sort__link_dec" href="#">Убывание</a>
+          </li>
+        </ul>
+      </section>
       <section class="catalog">
-        <h2 class="sort">Сортировка:</h2>
-        <ul class="sort__list">
-          <li class="sort__item">
-            <button class="sort__btn" type="button">По цене</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__btn" type="button">По типу</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__btn" type="button">По популярности</button>
-          </li>
-        </ul>
-        <ul class="sort__list">
-          <li class="sort__item">
-            <button class="sort__btn" type="button">Возрастание</button>
-          </li>
-          <li class="sort__item">
-            <button class="sort__btn" type="button">Убывание</button>
-          </li>
-        </ul>
         <ul class="catalog__list">
           <li class="catalog__item">
             <h3 class="catalog__name">
@@ -158,43 +158,49 @@
 
     </main>
 
-    <footer class="footer">
-      <a class="logo logo_yellow" href="index.html">DEVICE</a>
-      <ul class="user-menu">
-        <li class="user-menu__item">
-          <a class="user-menu__login" href="#">Войти</a>
-        </li>
-        <li class="user-menu__item">
-          <a class="user-menu__compare" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu__item">
-          <a class="user-menu__cart" href="#">Корзина</a>
-        </li>
-      </ul>
-      <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link" href="#">Доставка</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Гарантия</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
-      <ul class="social">
-        <li class="social__item">
-          <a href="#">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a href="#">Instagram</a>
-        </li>
-        <li class="social__item">
-          <a href="#">Twitter</a>
-        </li>
-      </ul>
+    <footer class="page-footer">
+      <div class="container">
+        <a class="logo logo_yellow" href="#">DEVICE</a>
+        <ul class="user-menu user-menu_footer">
+          <li class="user-menu__item user-menu__item_footer">
+            <a class="user-menu__login user-menu__login_footer" href="#">Валентин Петухов</a>
+            <a class="user-menu__exit user-menu__exit_footer" href="#">Выйти</a>
+          </li>
+          <li class="user-menu__item user-menu__item_footer">
+            <a class="user-menu__compare user-menu__compare_footer" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu__item user-menu__item_footer">
+            <a class="user-menu__cart user-menu__cart_footer" href="#">Корзина</a>
+          </li>
+        </ul>
+        <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Гарантия</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="footer__phone" href="+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link_face" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_inst" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_twit" href="#">Twitter</a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="#" alt="Логотип html-academy">
+        </a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
