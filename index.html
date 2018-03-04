@@ -169,9 +169,17 @@
 
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <button class="services-slider__btn">Доставка</button>
-        <button class="services-slider__btn">Гарантия</button>
-        <button class="services-slider__btn">Кредит</button>
+        <ul class="services-control">
+          <li class="services-control__item">
+            <button class="services-control__btn" type="button">Доставка</button>
+          </li>
+          <li class="services-control__item">
+            <button class="services-control__btn" type="button">Гарантия</button>
+          </li>
+          <li class="services-control__item">
+            <button class="services-control__btn" type="button">Кредит</button>
+          </li>
+        </ul>
         <ul class="services-slider">
           <li class="services-slider__slide">
             <h3 class="services-slider__title">Доставка</h3>
@@ -257,7 +265,7 @@
             <a class="footer-nav__link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer__phone" href="+74954959595">Тел.: +7 (495) 495-95-95</a>
+        <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         <ul class="social">
           <li class="social__item">
             <a class="social__link social__link_face" href="#">Facebook</a>
@@ -269,24 +277,24 @@
             <a class="social__link social__link_twit" href="#">Twitter</a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="#" alt="Логотип html-academy">
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+          <img class="htmlacademy__logo" src="#" alt="Логотип html-academy">
         </a>
       </div>
     </footer>
 
     <section class="write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <button class="write-us__close">Закрыть</button>
+      <button class="write-us__close" type="button">Закрыть</button>
       <form class="write-us__form" action="" method="post">
         <label class="write-us__label">Ваше имя:
           <input class="write-us__input" type="text" name="name" placeholder="Имя Фамилия">
         </label>
         <label class="write-us__label">Ваш e-mail:
-          <input class="write-us__input" type="text" name="email" placeholder="email@example.com">
+          <input class="write-us__input" type="email" name="email" placeholder="email@example.com">
         </label>
         <label class="write-us__label">Текст письма:
-          <textarea class="write-us__textarea" name="letter" cols="30" rows="10">В свободной форме</textarea>
+          <textarea class="write-us__textarea" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
         </label>
         <button class="write-us__btn" type="submit">Отправить</button>
       </form>
@@ -294,7 +302,7 @@
 
     <section class="map-popup">
       <h2 class="visually-hidden">Карта</h2>
-      <button class="write-us__close">Закрыть</button>
+      <button class="write-us__close" type="button">Закрыть</button>
       <script>// Map script</script>
     </section>
 
