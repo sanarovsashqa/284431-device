@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
 
     <header class="page-header">
-      <a class="logo logo_black">DEVICE</a>
+      <a class="logo logo_black">
+        <img class="logo__img" src="img/logo_black.svg" width="168" height="53" alt="Логотип Device">
+      </a>
       <form class="search-form" action="" method="get">
         <input class="search-form__input" type="text" placeholder="Поиск по сайту">
         <button class="search-form__button" type="submit">Найти</button>
@@ -72,7 +74,7 @@
         <ul class="popular-slider">
           <li class="popular-slider__slide">
             <div class="popular-slider__content-left">
-              <img class="popular-slider__img" src="img/" alt="Палка для селфи">
+              <img class="popular-slider__img" src="img/popular-slider-1.png" width="384" height="486" alt="Палка для селфи">
             </div>
             <div class="popular-slider__content-right">
               <p class="popular-slider__title">Делай селфи, как Бен Стиллер! </p>
@@ -94,7 +96,7 @@
           </li>
           <li class="popular-slider__slide">
             <div class="popular-slider__content-left">
-              <img class="popular-slider__img" src="img/" alt="Фитнес-браслет">
+              <img class="popular-slider__img" src="img/popular-slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             </div>
             <div class="popular-slider__content-right">
               <p class="popular-slider__title">Худеем правильно!</p>
@@ -111,7 +113,7 @@
           </li>
           <li class="popular-slider__slide">
             <div class="popular-slider__content-left">
-              <img class="popular-slider__img" src="img/" alt="Квадрокоптер">
+              <img class="popular-slider__img" src="img/popular-slider-3.png" width="526" height="334" alt="Квадрокоптер">
             </div>
             <div class="popular-slider__content-right">
               <p class="popular-slider__title">Порхает как бабочка, жалит как пчела!</p>
@@ -200,16 +202,16 @@
         <h2 class="visually-hidden">Производители</h2>
         <ul class="producers__list">
           <li class="producers__item">
-            <img class="producers__img" src="#" alt="Производитель dji">
+            <img class="producers__img" src="img/producers-logo-1.png" width="260" height="100" alt="Производитель dji">
           </li>
           <li class="producers__item">
-            <img class="producers__img" src="#" alt="Производитель SP Gadgets">
+            <img class="producers__img" src="img/producers-logo-2.png" width="260" height="100" alt="Производитель SP Gadgets">
           </li>
           <li class="producers__item">
-            <img class="producers__img" src="#" alt="Производитель GoPro">
+            <img class="producers__img" src="img/producers-logo-3.png" width="260" height="100" alt="Производитель GoPro">
           </li>
           <li class="producers__item">
-            <img class="producers__img" src="#" alt="Производитель VIVE">
+            <img class="producers__img" src="img/producers-logo-4.png" width="260" height="100" alt="Производитель VIVE">
           </li>
         </ul>
       </section>
@@ -231,7 +233,7 @@
           <h2 class="contact__title">Контакты</h2>
           <p class="contact__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <a class="contact__link" href="#">
-            <img class="contact__img" src="#" alt="Карта с адресом улица Строителей, 15">
+            <img class="contact__img" src="img/map.jpg" width="560" height="222" alt="Карта с адресом улица Строителей, 15">
           </a>
           <a class="contact__link" href="#">Напишите нам</a>
         </section>
@@ -241,7 +243,9 @@
 
     <footer class="page-footer">
       <div class="container">
-        <a class="logo logo_yellow" href="#">DEVICE</a>
+      <a class="logo logo_yellow">
+        <img class="logo__img logo__img_yellow" src="img/logo_yellow.svg" width="168" height="53" alt="Логотип Device">
+      </a>
         <ul class="user-menu user-menu_footer">
           <li class="user-menu__item user-menu__item_footer">
             <a class="user-menu__login user-menu__login_footer" href="#">Войти</a>
@@ -278,7 +282,7 @@
           </li>
         </ul>
         <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img class="htmlacademy__logo" src="#" alt="Логотип html-academy">
+          <img class="htmlacademy__logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип html-academy">
         </a>
       </div>
     </footer>
@@ -306,7 +310,7 @@
       <script>// Map script</script>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 
   </body>
