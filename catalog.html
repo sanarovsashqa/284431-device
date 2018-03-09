@@ -81,6 +81,52 @@
 
       <section class="filter">
         <h2 class="filter__title">Фильтр:</h2>
+        <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Стоимость</legend>
+            <label class="visually-hidden" for="filter__range_price">Стоимость от 0 до 7500</label>
+            <input class="filter__range" id="filter__range_price" type="range" min="0" max="7500" step="100">
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Цвет</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" id="filter__checkbox_black" name="black" checked>
+                <label class="filter__label_checkbox" for="filter__checkbox_black">Черный</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" id="filter__checkbox_white" name="white">
+                <label class="filter__label_checkbox" for="filter__checkbox_white">Белый</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" id="filter__checkbox_blue" name="blue" checked>
+                <label class="filter__label_checkbox" for="filter__checkbox_blue">Синий</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" id="filter__checkbox_red" name="red" checked>
+                <label class="filter__label_checkbox" for="filter__checkbox_red">Красный</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__checkbox" type="checkbox" id="filter__checkbox_pink" name="pink">
+                <label class="filter__label_checkbox" for="filter__checkbox_pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__fieldset">
+            <legend class="filter__legend">Bluetooth</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__radio" type="radio" id="filter__radio_yes" name="bluetooth" value="yes" checked>
+                <label class="filter__label_radio" for="filter__radio_yes">Есть</label>
+              </li>
+              <li class="filter__item">
+                <input class="filter__radio" type="radio" id="filter__radio_no" name="bluetooth" value="no">
+                <label class="filter__label_radio" for="filter__radio_no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter__btn" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="sort">
