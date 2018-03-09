@@ -13,8 +13,9 @@
       <a class="logo logo_black">
         <img class="logo__img" src="img/logo-black.svg" width="168" height="53" alt="Логотип Device">
       </a>
-      <form class="search-form" action="" method="get">
-        <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="visually-hidden" for="search-form__input_search">Поиск по сайту</label>
+        <input class="search-form__input" type="text" id="search-form__input_search" placeholder="Поиск по сайту">
         <button class="search-form__button" type="submit">Найти</button>
       </form>
       <ul class="user-menu">
@@ -134,13 +135,16 @@
         </ul>
         <ul class="controls">
           <li class="controls__item">
-            <input class="controls__btn" type="radio" name="slider-controls" checked>
+            <label class="visually-hidden" for="controls__btn_monopod">Селфи-палка</label>
+            <input class="controls__btn" type="radio" id="controls__btn_monopod" name="slider-controls" checked>
           </li>
           <li class="controls__item">
-            <input class="controls__btn" type="radio" name="slider-controls">
+            <label class="visually-hidden" for="controls__btn_fitness-tracker">Фитнес-браслет</label>
+            <input class="controls__btn" type="radio" id="controls__btn_fitness-tracker" name="slider-controls">
           </li>
           <li class="controls__item">
-            <input class="controls__btn" type="radio" name="slider-controls">
+            <label class="visually-hidden" for="controls__btn_quadrocopter">Квадрокоптер</label>
+            <input class="controls__btn" type="radio" id="controls__btn_quadrocopter" name="slider-controls">
           </li>
         </ul>
       </section>
@@ -205,13 +209,13 @@
             <img class="producers__img" src="img/producers-logo-1.png" width="260" height="100" alt="Производитель dji">
           </li>
           <li class="producers__item">
-            <img class="producers__img" src="img/producers-logo-2.png" width="260" height="100" alt="Производитель SP Gadgets">
+            <img class="producers__img" src="img/producers-logo-2.png" width="260" height="100" alt="Производитель sp gadgets">
           </li>
           <li class="producers__item">
-            <img class="producers__img" src="img/producers-logo-3.png" width="260" height="100" alt="Производитель GoPro">
+            <img class="producers__img" src="img/producers-logo-3.png" width="260" height="100" alt="Производитель gopro">
           </li>
           <li class="producers__item">
-            <img class="producers__img" src="img/producers-logo-4.png" width="260" height="100" alt="Производитель VIVE">
+            <img class="producers__img" src="img/producers-logo-4.png" width="260" height="100" alt="Производитель vive">
           </li>
         </ul>
       </section>
@@ -232,8 +236,8 @@
         <section class="contact">
           <h2 class="contact__title">Контакты</h2>
           <p class="contact__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contact__link" href="#">
-            <img class="contact__img" src="img/map.jpg" width="560" height="222" alt="Карта с адресом улица Строителей, 15">
+          <a class="contact__link" href="#" aria-label="Интерактивная карта">
+            <img class="contact__img" src="img/map.jpg" width="560" height="222" alt="Офис по адресу улица Строителей, 15">
           </a>
           <a class="contact__link" href="#">Напишите нам</a>
         </section>
@@ -281,7 +285,7 @@
             <a class="social__link social__link_twit" href="#">Twitter</a>
           </li>
         </ul>
-        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Сайт htmlacademy.ru">
           <img class="htmlacademy__logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип html-academy">
         </a>
       </div>
@@ -290,16 +294,13 @@
     <section class="write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button class="write-us__close" type="button">Закрыть</button>
-      <form class="write-us__form" action="" method="post">
-        <label class="write-us__label">Ваше имя:
-          <input class="write-us__input" type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label class="write-us__label">Ваш e-mail:
-          <input class="write-us__input" type="email" name="email" placeholder="email@example.com">
-        </label>
-        <label class="write-us__label">Текст письма:
-          <textarea class="write-us__textarea" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
-        </label>
+      <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="write-us__label" for="write-us__input_name">Ваше имя:</label>
+        <input class="write-us__input" type="text" id="write-us__input_name" name="name" placeholder="Имя Фамилия">
+        <label class="write-us__label" for="write-us__input_email">Ваш e-mail:</label>
+        <input class="write-us__input" type="email" id="write-us__input_email" name="email" placeholder="email@example.com">
+        <label class="write-us__label" for="write-us__textarea_letter">Текст письма:</label>
+        <textarea class="write-us__textarea" id="write-us__textarea_letter" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
         <button class="write-us__btn" type="submit">Отправить</button>
       </form>
     </section>

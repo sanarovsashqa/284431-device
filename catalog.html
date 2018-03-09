@@ -9,11 +9,12 @@
   <body>
 
     <header class="page-header">
-      <a class="logo logo_black" href="index.html">
-        <img class="logo__img" src="img/logo-black.svg" width="168" height="53" alt="Логотип Device">
+      <a class="logo logo_black" href="index.html" aria-label="Главная страница device">
+        <img class="logo__img" src="img/logo-black.svg" width="168" height="53" alt="Логотип device">
       </a>
-      <form class="search-form" action="" method="get">
-        <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="visually-hidden" for="search-form__search">Поиск по сайту</label>
+        <input class="search-form__input" type="text" id="search-form__input_search" placeholder="Поиск по сайту">
         <button class="search-form__button" type="submit">Найти</button>
       </form>
       <ul class="user-menu">
@@ -162,8 +163,8 @@
 
     <footer class="page-footer">
       <div class="container">
-        <a class="logo logo_yellow" href="index.html">
-          <img class="logo__img logo__img_yellow" src="img/logo-yellow.svg" width="168" height="53" alt="Логотип Device">
+        <a class="logo logo_yellow" href="index.html" aria-label="Главная страница device">
+          <img class="logo__img logo__img_yellow" src="img/logo-yellow.svg" width="168" height="53" alt="Логотип device">
         </a>
         <ul class="user-menu user-menu_footer">
           <li class="user-menu__item user-menu__item_footer">
@@ -201,7 +202,7 @@
             <a class="social__link social__link_twit" href="#">Twitter</a>
           </li>
         </ul>
-        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Сайт htmlacademy.ru">
           <img class="htmlacademy__logo" src="img/htmlacademy-logo.svg" width="27" height="35" alt="Логотип html-academy">
         </a>
       </div>
