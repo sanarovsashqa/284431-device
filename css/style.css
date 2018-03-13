@@ -30,3 +30,252 @@
     font-style: normal;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-header {
+  background-color: #f7e296;
+}
+
+.search-form::before {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/search.svg") no-repeat;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.search-form__input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  border: 0;
+  background-color: transparent;
+}
+
+.search-form__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form__input:hover::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form__input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form__input:focus::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-form__input:focus:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-form__input:focus {
+  outline: 0;
+}
+
+.search-form__input:focus ~ .search-form__button {
+  position: relative;
+  width: 80px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000000;
+  overflow: visible;
+}
+
+.search-form__button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.search-form__button:focus {
+  position: relative;
+  width: 80px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #000000;
+  overflow: visible;
+}
+
+.search-form__button:hover {
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.search-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.user-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-menu__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-menu__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-menu__link_login::before {
+  content: " ";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background: url("../img/login.svg") no-repeat;
+  padding-right: 10px;
+}
+
+.user-menu__link_compare::before {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../img/compare.svg") no-repeat;
+  padding-right: 10px;
+}
+
+.user-menu__link_cart::before {
+  content: " ";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/cart.svg") no-repeat;
+  padding-right: 10px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__btn {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__btn:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav__btn_catalog::after {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../img/plus.png") no-repeat;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.nav-catalog{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-catalog__link {
+  font-family: "Open Sans, "Arial", sans-serif";
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-catalog__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-catalog__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.nav__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
