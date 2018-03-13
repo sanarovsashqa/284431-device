@@ -516,3 +516,58 @@ body {
   color: #000000;
 }
 
+.producers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.producers__img {
+  position: relative;
+  opacity: 0.2;
+}
+
+.producers__item {
+  width: 260px;
+  height: 100px;
+}
+.producers__item_dji:hover::before {
+  content: " ";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background: url("../img/producers-logo-1-hover.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.producers__item_sp-gadgets:hover::before {
+  content: " ";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background: url("../img/producers-logo-2-hover.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.producers__item_gopro:hover::before {
+  content: " ";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background: url("../img/producers-logo-3-hover.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.producers__item_vive:hover::before {
+  content: " ";
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  background: url("../img/producers-logo-4-hover.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
