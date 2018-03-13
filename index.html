@@ -80,16 +80,16 @@
               <p class="popular-slider__title">Делай селфи, как Бен Стиллер! </p>
               <p class="popular-slider__subtitle">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
               <a class="popular-slider__link" href="#">Подробнее</a>
-              <table class="popular-slider__about-us">
-                <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
+              <table class="popular-slider__attributes">
+                <tr class="popular-slider__attributes-row">
+                  <td class="popular-slider__attributes-value">8,5 м</td>
+                  <td class="popular-slider__attributes-value">5 кг</td>
+                  <td class="popular-slider__attributes-value">Карбон</td>
                 </tr>
-                <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
+                <tr class="popular-slider__attributes-row">
+                  <td class="popular-slider__attributes-name">Длина палки</td>
+                  <td class="popular-slider__attributes-name">Вес палки</td>
+                  <td class="popular-slider__attributes-name">Материал</td>
                 </tr>
               </table>
             </div>
@@ -101,12 +101,12 @@
             <div class="popular-slider__content-right">
               <p class="popular-slider__title">Худеем правильно!</p>
               <p class="popular-slider__subtitle">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p> <a class="popular-slider__link" href="#">Подробнее</a>
-              <table class="popular-slider__about-us">
-                <tr>
-                  <td>48 часов</td>
+              <table class="popular-slider__attributes">
+                <tr class="popular-slider__attributes-row">
+                  <td class="popular-slider__attributes-value">48 часов</td>
                 </tr>
-                <tr>
-                  <th>Без подзарядки</th>
+                <tr class="popular-slider__attributes-row">
+                  <td class="popular-slider__attributes-name">Без подзарядки</td>
                 </tr>
               </table>
             </div>
@@ -119,14 +119,14 @@
               <p class="popular-slider__title">Порхает как бабочка, жалит как пчела!</p>
               <p class="popular-slider__subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="popular-slider__link" href="#">Подробнее</a>
-              <table class="popular-slider__about-us">
-                <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
+              <table class="popular-slider__attributes">
+                <tr class="popular-slider__attributes-row">
+                  <td class="popular-slider__attributes-value">800 м</td>
+                  <td class="popular-slider__attributes-value">50 м</td>
                 </tr>
-                <tr>
-                  <th>Дальность полета</th>
-                  <th>Радиус поражения</th>
+                <tr class="popular-slider__attributes-row">
+                  <td class="popular-slider__attributes-name">Дальность полета</td>
+                  <td class="popular-slider__attributes-name">Радиус поражения</td>
                 </tr>
               </table>
             </div>
@@ -134,16 +134,16 @@
         </ul>
         <ul class="controls">
           <li class="controls__item">
-            <label class="visually-hidden" for="controls__btn_monopod">Селфи-палка</label>
-            <input class="controls__btn" type="radio" id="controls__btn_monopod" name="slider-controls" checked>
+            <input class="controls__btn visually-hidden" type="radio" id="controls__btn_monopod" name="slider-controls" checked>
+            <label class="controls__label" for="controls__btn_monopod">Селфи-палка</label>
           </li>
           <li class="controls__item">
-            <label class="visually-hidden" for="controls__btn_fitness-tracker">Фитнес-браслет</label>
-            <input class="controls__btn" type="radio" id="controls__btn_fitness-tracker" name="slider-controls">
+            <input class="controls__btn visually-hidden" type="radio" id="controls__btn_fitness-tracker" name="slider-controls">
+            <label class="controls__label" for="controls__btn_fitness-tracker">Фитнес-браслет</label>
           </li>
           <li class="controls__item">
-            <label class="visually-hidden" for="controls__btn_quadrocopter">Квадрокоптер</label>
-            <input class="controls__btn" type="radio" id="controls__btn_quadrocopter" name="slider-controls">
+            <input class="controls__btn visually-hidden" type="radio" id="controls__btn_quadrocopter" name="slider-controls">
+            <label class="controls__label" for="controls__btn_quadrocopter">Квадрокоптер</label>
           </li>
         </ul>
       </section>

@@ -279,3 +279,100 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.popular-slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular-slider__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.popular-slider__link {
+  position: relative;
+  z-index: 25;
+  display: block;
+  width: 220px;
+  padding: 8px 0;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.popular-slider__link::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 9px;
+  background-color: #f0c52e;
+}
+
+.popular-slider__link:hover,
+.popular-slider__link:focus{
+  background-color: #f0c52e;
+}
+
+.popular-slider__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-slider__attributes-value {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.popular-slider__attributes-name {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.controls {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.controls__item input[type="radio"] + .controls__label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  background: url("../img/popular-slider-btn.svg") no-repeat;
+  background-size: cover;
+}
+
+.controls__item input[type="radio"]:checked + .controls__label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  font-size: 0;
+  background: url("../img/popular-slider-btn-checked.svg") no-repeat;
+  background-size: cover;
+}
+
+.controls__item input[type="radio"]:focus + .controls__label {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
