@@ -376,3 +376,66 @@ body {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog__link_vr::before {
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/catalog-1.svg") no-repeat center;
+}
+
+.catalog__link_monopod::before {
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/catalog-2.svg") no-repeat center;
+}
+
+.catalog__link_action-cam::before {
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/catalog-3.svg") no-repeat center;
+}
+
+.catalog__link_fitnes-tracker::before {
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/catalog-4.svg") no-repeat center;
+}
+
+.catalog__link_smart-watch::before {
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/catalog-5.svg") no-repeat center;
+}
+
+.catalog__link_quadrocopter::before {
+  content: " ";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background: #f7e296 url("../img/catalog-6.svg") no-repeat center;
+}
+
