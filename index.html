@@ -8,146 +8,151 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <a class="logo logo_black">
-        <img class="logo__img" src="img/logo-black.svg" width="168" height="53" alt="Логотип Device">
-      </a>
-      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="visually-hidden" for="search-form__input_search">Поиск по сайту</label>
-        <input class="search-form__input" type="text" id="search-form__input_search" placeholder="Поиск по сайту">
-        <button class="search-form__button visually-hidden" type="button">Найти</button>
-      </form>
-      <ul class="user-menu">
-        <li class="user-menu__item">
-          <a class="user-menu__link user-menu__login" href="#">Войти</a>
-        </li>
-        <li class="user-menu__item">
-          <a class="user-menu__link user-menu__compare" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu__item">
-          <a class="user-menu__link user-menu__cart" href="#">Корзина</a>
-        </li>
-      </ul>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <button class="nav__btn nav__btn_catalog" type="button">Каталог товаров</button>
-              <ul class="nav-catalog">
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Умные часы</a>
-                </li>
-                <li class="nav-catalog__item">
-                  <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+    <div class="container">
+      <header class="page-header">
+        <a class="logo logo_black">
+          <img class="logo__img logo__img_balck" src="img/logo-black.svg" width="163" height="35" alt="Логотип Device">
+        </a>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="visually-hidden" for="search-form__input_search">Поиск по сайту</label>
+          <input class="search-form__input" type="text" id="search-form__input_search" placeholder="Поиск по сайту">
+          <button class="search-form__button visually-hidden" type="button">Найти</button>
+        </form>
+        <ul class="user-menu">
+          <li class="user-menu__item user-menu__item_login">
+            <a class="user-menu__link user-menu__link_login" href="#">Войти</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Доставка</a>
+          <li class="user-menu__item user-menu__item_compare">
+            <a class="user-menu__link user-menu__link_compare" href="#">Сравнить</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Гарантия</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Контакты</a>
+          <li class="user-menu__item user-menu__item_cart">
+            <a class="user-menu__link user-menu__link_cart" href="#">Корзина</a>
           </li>
         </ul>
-      </nav>
-    </header>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item_catalog">
+              <button class="nav__btn nav__btn_catalog" type="button">Каталог товаров</button>
+              <ul class="nav-catalog">
+                <li class="nav-catalog__item nav-catalog__item-left">
+                  <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="nav-catalog__item nav-catalog__item-center">
+                  <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="nav-catalog__item nav-catalog__item-right">
+                  <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
+                </li>
+                <li class="nav-catalog__item nav-catalog__item-left">
+                  <a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a>
+                </li>
+                <li class="nav-catalog__item nav-catalog__item-center test">
+                  <a class="nav-catalog__link" href="#">Умные часы</a>
+                </li>
+                <li class="nav-catalog__item nav-catalog__item-left">
+                  <a class="nav-catalog__link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item nav__item_delivery">
+              <a class="nav__link" href="#">Доставка</a>
+            </li>
+            <li class="nav__item nav__item_guarantee">
+              <a class="nav__link" href="#">Гарантия</a>
+            </li>
+            <li class="nav__item nav__item_contact">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main class="page-content">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
 
-      <section class="popular">
-        <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="popular-slider">
-          <li class="popular-slider__slide">
-            <div class="popular-slider__content-left">
-              <img class="popular-slider__img" src="img/popular-slider-1.png" width="384" height="486" alt="Палка для селфи">
-            </div>
-            <div class="popular-slider__content-right">
-              <p class="popular-slider__title">Делай селфи, как Бен Стиллер! </p>
-              <p class="popular-slider__subtitle">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
-              <a class="popular-slider__link" href="#">Подробнее</a>
-              <table class="popular-slider__attributes">
-                <tr class="popular-slider__attributes-row">
-                  <td class="popular-slider__attributes-value">8,5 м</td>
-                  <td class="popular-slider__attributes-value">5 кг</td>
-                  <td class="popular-slider__attributes-value">Карбон</td>
-                </tr>
-                <tr class="popular-slider__attributes-row">
-                  <td class="popular-slider__attributes-name">Длина палки</td>
-                  <td class="popular-slider__attributes-name">Вес палки</td>
-                  <td class="popular-slider__attributes-name">Материал</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="popular-slider__slide">
-            <div class="popular-slider__content-left">
-              <img class="popular-slider__img" src="img/popular-slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            </div>
-            <div class="popular-slider__content-right">
-              <p class="popular-slider__title">Худеем правильно!</p>
-              <p class="popular-slider__subtitle">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p> <a class="popular-slider__link" href="#">Подробнее</a>
-              <table class="popular-slider__attributes">
-                <tr class="popular-slider__attributes-row">
-                  <td class="popular-slider__attributes-value">48 часов</td>
-                </tr>
-                <tr class="popular-slider__attributes-row">
-                  <td class="popular-slider__attributes-name">Без подзарядки</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-          <li class="popular-slider__slide">
-            <div class="popular-slider__content-left">
-              <img class="popular-slider__img" src="img/popular-slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            </div>
-            <div class="popular-slider__content-right">
-              <p class="popular-slider__title">Порхает как бабочка, жалит как пчела!</p>
-              <p class="popular-slider__subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="popular-slider__link" href="#">Подробнее</a>
-              <table class="popular-slider__attributes">
-                <tr class="popular-slider__attributes-row">
-                  <td class="popular-slider__attributes-value">800 м</td>
-                  <td class="popular-slider__attributes-value">50 м</td>
-                </tr>
-                <tr class="popular-slider__attributes-row">
-                  <td class="popular-slider__attributes-name">Дальность полета</td>
-                  <td class="popular-slider__attributes-name">Радиус поражения</td>
-                </tr>
-              </table>
-            </div>
-          </li>
-        </ul>
-        <ul class="controls">
-          <li class="controls__item">
-            <input class="controls__btn visually-hidden" type="radio" id="controls__btn_monopod" name="slider-controls" checked>
-            <label class="controls__label" for="controls__btn_monopod">Селфи-палка</label>
-          </li>
-          <li class="controls__item">
-            <input class="controls__btn visually-hidden" type="radio" id="controls__btn_fitness-tracker" name="slider-controls">
-            <label class="controls__label" for="controls__btn_fitness-tracker">Фитнес-браслет</label>
-          </li>
-          <li class="controls__item">
-            <input class="controls__btn visually-hidden" type="radio" id="controls__btn_quadrocopter" name="slider-controls">
-            <label class="controls__label" for="controls__btn_quadrocopter">Квадрокоптер</label>
-          </li>
-        </ul>
-      </section>
-
+      <div class="container">
+        <section class="popular">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <input class="controls__btn controls__btn_slide-1 visually-hidden" type="radio" id="controls__btn_slide-1" name="slider-controls" checked>
+          <input class="controls__btn controls__btn_slide-2 visually-hidden" type="radio" id="controls__btn_fitness-slide-2" name="slider-controls">
+          <input class="controls__btn controls__btn_slide-3 visually-hidden" type="radio" id="controls__btn_slide-3" name="slider-controls">
+          <ul class="controls">
+            <li class="controls__item">
+              <label class="controls__label controls__label_slide-1" for="controls__btn_slide-1">Селфи-палка</label>
+            </li>
+            <li class="controls__item">
+              <label class="controls__label controls__label_slide-2" for="controls__btn_fitness-slide-2">Фитнес-браслет</label>
+            </li>
+            <li class="controls__item">
+              <label class="controls__label controls__label_slide-3" for="controls__btn_slide-3">Квадрокоптер</label>
+            </li>
+          </ul>
+          <ul class="popular-slider">
+            <li class="popular-slider__slide popular-slider__slide_first">
+              <div class="popular-slider__content-left">
+                <img class="popular-slider__img" src="img/popular-slider-1.png" width="384" height="486" alt="Палка для селфи">
+              </div>
+              <div class="popular-slider__content-right">
+                <p class="popular-slider__title">Делай селфи,<br> как Бен Стиллер! </p>
+                <p class="popular-slider__subtitle">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
+                <a class="popular-slider__link" href="1">Подробнее</a>
+                <div class="popular-slider__attributes">
+                  <dl class="popular-slider__attributes-list">
+                    <dt class="popular-slider__attributes-value">8,5 м</dt>
+                    <dd class="popular-slider__attributes-name">Длина палки</dd>
+                  </dl>
+                  <dl class="popular-slider__attributes-list">
+                    <dt class="popular-slider__attributes-value">5 кг</dt>
+                    <dd class="popular-slider__attributes-name">Вес палки</dd>
+                  </dl>
+                  <dl class="popular-slider__attributes-list">
+                    <dt class="popular-slider__attributes-value">Карбон</dt>
+                    <dd class="popular-slider__attributes-name">Материал</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="popular-slider__slide popular-slider__slide_second">
+              <div class="popular-slider__content-left">
+                <img class="popular-slider__img" src="img/popular-slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+              </div>
+              <div class="popular-slider__content-right">
+                <p class="popular-slider__title">Худеем<br> правильно!</p>
+                <p class="popular-slider__subtitle">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+                <a class="popular-slider__link" href="2">Подробнее</a>
+                <div class="popular-slider__attributes">
+                  <dl class="popular-slider__attributes-list">
+                    <dt class="popular-slider__attributes-value">48 часов</dt>
+                    <dd class="popular-slider__attributes-name">Без подзарядки</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="popular-slider__slide popular-slider__slide_third">
+              <div class="popular-slider__content-left">
+                <img class="popular-slider__img" src="img/popular-slider-3.png" width="526" height="334" alt="Квадрокоптер">
+              </div>
+              <div class="popular-slider__content-right">
+                <p class="popular-slider__title">Порхает как бабочка,<br> жалит как пчела!</p>
+                <p class="popular-slider__subtitle">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="popular-slider__link" href="3">Подробнее</a>
+                <div class="popular-slider__attributes">
+                  <dl class="popular-slider__attributes-list">
+                    <dt class="popular-slider__attributes-value">800 м</dt>
+                    <dd class="popular-slider__attributes-name">Дальность полета</dd>
+                  </dl>
+                  <dl class="popular-slider__attributes-list">
+                    <dt class="popular-slider__attributes-value">50 м</dt>
+                    <dd class="popular-slider__attributes-name">Радиус поражения</dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!-- Починить кнопки -->
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog__list">
