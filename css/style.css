@@ -1252,11 +1252,21 @@ body {
 }
 
 .write-us {
+  position: relative;
+  width: 760px;
+  margin: 0 auto;
+  padding-top: 95px;
+  padding-right: 100px;
+  padding-bottom: 75px;
+  padding-left: 100px;
   background-color: #ffffff;
 }
 
 .write-us__close {
-  position: relative;
+  position: absolute;
+  z-index: 25;
+  top: 23px;
+  right: 23px;
   width: 55px;
   height: 55px;
   font-size: 0;
@@ -1297,7 +1307,16 @@ body {
   transform: rotate(135deg);
 }
 
+.write-us__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .write-us__label {
+  display: block;
+  width: 360px;
+  margin-bottom: 5px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1306,15 +1325,16 @@ body {
 }
 
 .write-us__input {
-  width: 350px;
-  height: 49px;
-  padding-left: 10px;
+  width: 336px;
+  height: 44px;
+  margin-bottom: 35px;
+  padding-left: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   background-color: rgba(229, 229, 229, 0.5);
-  border: none;
+  border: 2px solid transparent;
 }
 
 .write-us__input::-webkit-input-placeholder {
@@ -1346,7 +1366,9 @@ body {
 .write-us__textarea {
   width: 740px;
   height: 135px;
-  padding: 10px;
+  margin-bottom: 45px;
+  padding-top: 15px;
+  padding-left: 20px;
   resize: none;
 }
 
@@ -1388,6 +1410,15 @@ body {
 
 .write-us__btn:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.map-popup {
+  position: relative;
+  width: 960px;
+  min-height: 560px;
+  margin: 0 auto;
+  background: url(../img/map-big.jpg) no-repeat;
+  background-size: cover;
 }
 
 .title {
