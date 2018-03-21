@@ -8,21 +8,22 @@
   </head>
   <body>
 
-    <div class="catalog-header">
+    <header class="page-header">
       <div class="container">
-        <header class="page-header">
+        <div class="page-header-wrapper page-header-catalog">
           <a class="logo logo_black" href="index.html">
-            <img class="logo__img logo__img_balck" src="img/logo-black.svg" width="163" height="35" alt="Логотип Device">
+            <img class="logo__img logo__img_black logo__img_catalog" src="img/logo-black.svg" width="163" height="35" alt="Логотип Device">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidden" for="search-form__input_search">Поиск по сайту</label>
             <input class="search-form__input" type="text" id="search-form__input_search" placeholder="Поиск по сайту">
+            <label class="search-form__label" for="search-form__input_search">
+              <span class="visually-hidden">Поиск по сайту</span>
+            </label>
             <button class="search-form__button visually-hidden" type="button">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-menu__item user-menu__item_login">
-              <a class="user-menu__link user-menu__link_login" href="#">Валентин Петухов</a>
-              <a class="user-menu__link user-menu__link_exit" href="#">Выйти</a>
+              <a class="user-menu__link user-menu__link_login" href="#">Войти</a>
             </li>
             <li class="user-menu__item user-menu__item_compare">
               <a class="user-menu__link user-menu__link_compare" href="#">Сравнить</a>
@@ -34,8 +35,8 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item nav__item_catalog">
-                <button class="nav__btn nav__btn_catalog" type="button">Каталог товаров</button>
-                <ul class="nav-catalog visually-hidden">
+                <button class="nav__btn nav__btn_catalog" type="button" onclick="toggleCatalog()">Каталог товаров</button>
+                <ul class="nav-catalog visually-hidden" id="nav-catalog">
                   <li class="nav-catalog__item nav-catalog__item-left">
                     <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
                   </li>
@@ -67,9 +68,9 @@
               </li>
             </ul>
           </nav>
-        </header>
+        </div>
       </div>
-    </div>
+    </header>
 
     <main class="page-content">
 
@@ -157,10 +158,14 @@
               </ul>
               <ul class="sort__list sort__list_func">
                 <li class="sort__item">
-                  <a class="sort__link sort__link_inc" href="#">Возрастание</a>
+                  <a class="sort__link sort__link_inc" href="#">
+                    <span class="visually-hidden">Возрастание</span>
+                  </a>
                 </li>
                 <li class="sort__item">
-                  <a class="sort__link sort__link_dec sort__link_current" href="#">Убывание</a>
+                  <a class="sort__link sort__link_dec sort__link_current" href="#">
+                    <span class="visually-hidden">Убывание</span>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -224,17 +229,19 @@
                 <li class="pagination__item pagination__item_prev">
                   <a class="pagination__link pagination__link_prev" href="#">Назад</a>
                 </li>
-                <div class="pagination-number-wrapper">
-                  <li class="pagination__item pagination__item_number">
-                    <a class="pagination__link pagination__link_current" href="#">1</a>
-                  </li>
-                  <li class="pagination__item pagination__item_number">
-                    <a class="pagination__link" href="#">2</a>
-                  </li>
-                  <li class="pagination__item pagination__item_number">
-                    <a class="pagination__link" href="#">3</a>
-                  </li>
-                </div>
+                <li class="pagination__item">
+                  <ol class="pagination__list_number">
+                    <li class="pagination__item pagination__item_number">
+                      <a class="pagination__link pagination__link_current" href="#">1</a>
+                    </li>
+                    <li class="pagination__item pagination__item_number">
+                      <a class="pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__item pagination__item_number">
+                      <a class="pagination__link" href="#">3</a>
+                    </li>
+                  </ol>
+                </li>
                 <li class="pagination__item pagination__item_next">
                   <a class="pagination__link pagination__link_next" href="#">Вперед</a>
                 </li>
@@ -250,7 +257,7 @@
       <div class="container">
         <div class="user-menu-wrapper">
           <a class="logo logo_yellow" href="index.html">
-            <img class="logo__img logo__img_yellow" src="img/logo-yellow.svg" width="163" height="35" alt="Логотип Device">
+            <img class="logo__img logo__img_yellow logo__img_catalog" src="img/logo-yellow.svg" width="163" height="35" alt="Логотип Device">
           </a>
           <ul class="user-menu user-menu_footer">
             <li class="user-menu__item user-menu__item_footer user-menu__item_login">
@@ -283,13 +290,19 @@
         <div class="social-wrapper">
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link_face" href="#">Facebook</a>
+              <a class="social__link social__link_face" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link_inst" href="#">Instagram</a>
+              <a class="social__link social__link_inst" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link_twit" href="#">Twitter</a>
+              <a class="social__link social__link_twit" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
             </li>
           </ul>
           <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Сайт htmlacademy.ru">
