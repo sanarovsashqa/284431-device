@@ -81,7 +81,7 @@
         <section class="popular">
           <h2 class="visually-hidden">Популярные товары</h2>
           <input class="controls__btn controls__btn_slide-1 visually-hidden" type="radio" id="controls__btn_slide-1" name="slider-controls" checked>
-          <input class="controls__btn controls__btn_slide-2 visually-hidden" type="radio" id="controls__btn_fitness-slide-2" name="slider-controls">
+          <input class="controls__btn controls__btn_slide-2 visually-hidden" type="radio" id="controls__btn_slide-2" name="slider-controls">
           <input class="controls__btn controls__btn_slide-3 visually-hidden" type="radio" id="controls__btn_slide-3" name="slider-controls">
           <ul class="controls">
             <li class="controls__item">
@@ -90,7 +90,7 @@
               </label>
             </li>
             <li class="controls__item">
-              <label class="controls__label controls__label_slide-2" for="controls__btn_fitness-slide-2">
+              <label class="controls__label controls__label_slide-2" for="controls__btn_slide-2">
                 <span class="visually-hidden">Фитнес-браслет</span>
               </label>
             </li>
@@ -194,9 +194,9 @@
 
       <section class="services">
         <div class="container">
-          <div class="services-wrapper">
+          <div class="services-wrapper" id="services">
             <h2 class="visually-hidden">Услуги</h2>
-            <ul class="services-control" id="services-btn">
+            <ul class="services-control">
               <li class="services-control__item services-control__item_decor-line">
                 <button class="services-control__btn services-control__btn_current" type="button">Доставка</button>
               </li>
@@ -208,15 +208,15 @@
               </li>
             </ul>
             <ul class="services-slider">
-              <li class="services-slider__slide services-slider__slide_first">
+              <li class="services-slider__slide services-slider__slide_current">
                 <h3 class="services-slider__title">Доставка</h3>
                 <p class="services-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
-              <li class="services-slider__slide services-slider__slide_second visually-hidden">
+              <li class="services-slider__slide">
                 <h3 class="services-slider__title">Гарантия</h3>
                 <p class="services-slider__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
               </li>
-              <li class="services-slider__slide services-slider__slide_third  visually-hidden">
+              <li class="services-slider__slide">
                 <h3 class="services-slider__title">Кредит</h3>
                 <p class="services-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
               </li>
