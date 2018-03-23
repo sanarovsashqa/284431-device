@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header-wrapper page-header-catalog">
-          <a class="logo logo_black" href="index.html">
+          <a class="logo logo_black logo_catalog" href="index.html">
             <img class="logo__img logo__img_black logo__img_catalog" src="img/logo-black.svg" width="163" height="35" alt="Логотип Device">
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -48,7 +48,7 @@
                     <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
                   </li>
                   <li class="nav-catalog__item nav-catalog__item-left">
-                    <a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a>
+                    <a class="nav-catalog__link">Моноподы для селфи</a>
                   </li>
                   <li class="nav-catalog__item nav-catalog__item-center">
                     <a class="nav-catalog__link" href="#">Умные часы</a>
@@ -98,15 +98,13 @@
               <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="filter__fieldset">
                   <legend class="filter__legend">Стоимость</legend>
-                  <label class="visually-hidden" for="filter__range_price">Стоимость от 0 до 7500</label>
-                  <input class="visually-hidden" id="filter__range_price" type="range" min="0" max="7500" step="100">
-                  <div class="range-controls">
+                  <div class="range-controls" aria-label="Ползунок стоимости от 0 до 7500">
                     <div class="range-controls__scale">
                       <div class="range-controls__bar"></div>
                     </div>
-                    <div class="range-controls__toggle range-controls__toggle_min"></div>
+                    <div class="range-controls__toggle range-controls__toggle_min" tabindex="0"></div>
                     <div class="range-controls__label range-controls__label_min">от 0</div>
-                    <div class="range-controls__toggle range-controls__toggle_max"></div>
+                    <div class="range-controls__toggle range-controls__toggle_max" tabindex="0"></div>
                     <div class="range-controls__label range-controls__label_max">до 5000</div>
                   </div>
                 </fieldset>
@@ -244,7 +242,7 @@
                   <li class="pagination__item">
                     <ol class="pagination__list_number">
                       <li class="pagination__item pagination__item_number">
-                        <a class="pagination__link pagination__link_current" href="#">1</a>
+                        <a class="pagination__link pagination__link_current">1</a>
                       </li>
                       <li class="pagination__item pagination__item_number">
                         <a class="pagination__link" href="#">2</a>
@@ -269,7 +267,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="user-menu-wrapper">
-          <a class="logo logo_yellow" href="index.html">
+          <a class="logo logo_catalog logo_yellow" href="index.html">
             <img class="logo__img logo__img_yellow logo__img_catalog" src="img/logo-yellow.svg" width="163" height="35" alt="Логотип Device">
           </a>
           <ul class="user-menu user-menu_footer">
