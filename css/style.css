@@ -862,7 +862,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.services-slider__slide_first::after {
+.services-slider__slide_delivery::after {
   content: " ";
   position: absolute;
   top: 13px;
@@ -873,7 +873,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/services-slider-1.svg");
 }
 
-.services-slider__slide_second::after {
+.services-slider__slide_guarantee::after {
   content: " ";
   position: absolute;
   top: -12px;
@@ -884,7 +884,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/services-slider-2.svg");
 }
 
-.services-slider__slide_third::after {
+.services-slider__slide_credit::after {
   content: " ";
   position: absolute;
   top: -12px;
@@ -1326,14 +1326,20 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us {
-  position: relative;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: -1;
   width: 760px;
-  margin: 0 auto;
   padding-top: 95px;
   padding-right: 100px;
   padding-bottom: 75px;
   padding-left: 100px;
   background-color: #ffffff;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 
 .write-us__close {
@@ -1366,6 +1372,7 @@ input[type="radio"].visually-hidden {
   width: 31px;
   height: 2px;
   background: #ffffff center;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -1377,6 +1384,7 @@ input[type="radio"].visually-hidden {
   width: 31px;
   height: 2px;
   background: #ffffff center;
+  -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
@@ -1496,12 +1504,24 @@ input[type="radio"].visually-hidden {
 }
 
 .map-popup {
-  position: relative;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: -1;
   width: 960px;
   min-height: 560px;
   margin: 0 auto;
   background: url(../img/map-big.jpg) no-repeat;
   background-size: cover;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.map-popup__iframe {
+  width: 960px;
+  height: 560px;
 }
 
 .page-header-catalog {
@@ -1547,6 +1567,7 @@ input[type="radio"].visually-hidden {
   margin: 0 13px;
   border-top: 1px solid #000000;
   border-right: 1px solid #000000;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   vertical-align: middle;
 }
@@ -1668,6 +1689,7 @@ input[type="radio"].visually-hidden {
 }
 
 .range-controls__toggle:active {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -2185,5 +2207,4 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 1);
   cusrsor: default;
 }
-
 
