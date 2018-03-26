@@ -20,7 +20,7 @@
             <label class="search-form__label" for="search-form__input_search">
               <span class="visually-hidden">Поиск по сайту</span>
             </label>
-            <button class="search-form__button visually-hidden" type="submit">Найти</button>
+            <button class="search-form__button visually-hidden" type="submit" name="search">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-menu__item user-menu__item_login">
@@ -38,23 +38,17 @@
               <li class="nav__item nav__item_catalog">
                 <a class="nav__link nav__link_catalog" href="#" >Каталог товаров</a>
                 <ul class="nav-catalog">
-                  <li class="nav-catalog__item nav-catalog__item-left">
+                  <li class="nav-catalog__item">
                     <a class="nav-catalog__link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="nav-catalog__item nav-catalog__item-center">
-                    <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="nav-catalog__item nav-catalog__item-right">
-                    <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
-                  </li>
-                  <li class="nav-catalog__item nav-catalog__item-left">
                     <a class="nav-catalog__link" href="catalog.html">Моноподы для селфи</a>
+                    <a class="nav-catalog__link" href="#">Экшн-камеры</a>
                   </li>
-                  <li class="nav-catalog__item nav-catalog__item-center">
+                  <li class="nav-catalog__item">
+                    <a class="nav-catalog__link" href="#">Фитнес-браслеты</a>
                     <a class="nav-catalog__link" href="#">Умные часы</a>
                   </li>
-                  <li class="nav-catalog__item nav-catalog__item-left">
-                    <a class="nav-catalog__link" href="#">Экшн-камеры</a>
+                  <li class="nav-catalog__item nav-catalog__item_end">
+                    <a class="nav-catalog__link" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </li>
@@ -163,9 +157,7 @@
             </li>
           </ul>
         </section>
-      </div>
 
-      <div class="container">
         <section class="catalog">
           <h2 class="visually-hidden">Каталог</h2>
           <ul class="catalog__list">
@@ -244,9 +236,9 @@
             </li>
           </ul>
         </section>
-      </div>
 
-      <div class="container">
+
+
         <div class="info">
           <section class="about-us">
             <h2 class="about-us__title">О нас</h2>
@@ -292,7 +284,7 @@
           </ul>
         </div>
         <div class="footer-nav-wrapper">
-          <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
+          <p class="footer-adress">г. Москва, ул. Строителей, 15</p>
           <ul class="footer-nav">
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#">Доставка</a>
@@ -304,7 +296,7 @@
               <a class="footer-nav__link" href="#">Контакты</a>
             </li>
           </ul>
-          <a class="footer__phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
         <div class="social-wrapper">
           <ul class="social">
@@ -334,7 +326,7 @@
 
       <section class="write-us">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <button class="write-us__close" type="button">
+        <button class="btn-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -344,7 +336,7 @@
           <input class="write-us__input" type="email" id="write-us__input_email" name="email" placeholder="email@example.com">
           <label class="write-us__label" for="write-us__textarea_letter">Текст письма:</label>
           <textarea class="write-us__textarea write-us__input" id="write-us__textarea_letter" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
-          <button class="write-us__btn" type="submit">Отправить</button>
+          <button class="write-us__btn" type="submit" name="send">Отправить</button>
         </form>
       </section>
 
@@ -352,7 +344,7 @@
 
       <section class="map-popup">
         <h2 class="visually-hidden">Карта</h2>
-        <button class="write-us__close" type="button">
+        <button class="btn-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <iframe class="map-popup__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1jl5qU6aNz2EuU1I2fWLcp8tPlomuqNr_"></iframe>
