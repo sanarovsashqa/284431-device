@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -326,14 +326,14 @@
 
       <section class="write-us">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <button class="btn-close" type="button">
+        <button class="btn-close write-us-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="write-us__label" for="write-us__input_name">Ваше имя:</label>
           <label class="write-us__label" for="write-us__input_email">Ваш e-mail:</label>
-          <input class="write-us__input" type="text" id="write-us__input_name" name="name" placeholder="Имя Фамилия">
-          <input class="write-us__input" type="email" id="write-us__input_email" name="email" placeholder="email@example.com">
+          <input class="write-us__input write-us__input_name" type="text" id="write-us__input_name" name="name" placeholder="Имя Фамилия">
+          <input class="write-us__input write-us__input_email" type="email" id="write-us__input_email" name="email" placeholder="email@example.com">
           <label class="write-us__label" for="write-us__textarea_letter">Текст письма:</label>
           <textarea class="write-us__textarea write-us__input" id="write-us__textarea_letter" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
           <button class="write-us__btn" type="submit" name="send">Отправить</button>
@@ -344,14 +344,14 @@
 
       <section class="map-popup">
         <h2 class="visually-hidden">Карта</h2>
-        <button class="btn-close" type="button">
+        <button class="btn-close map-close" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <iframe class="map-popup__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=1jl5qU6aNz2EuU1I2fWLcp8tPlomuqNr_"></iframe>
       </section>
 
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
 
   </body>
