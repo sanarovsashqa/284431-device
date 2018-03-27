@@ -95,9 +95,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   margin-right: auto;
+  box-sizing: border-box;
   width: 440px;
   min-height: 49px;
-}
+  }
 
 .search-form::before {
   content: " ";
@@ -109,6 +110,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form__input {
+  min-height: 47px;
   margin-right: auto;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -126,6 +128,10 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.search-form__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .search-form__input:hover::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -134,11 +140,19 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.search-form__input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .search-form__input:focus::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 1);
 }
 
 .search-form__input:focus:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.search-form__input:focus::placeholder {
   color: rgba(0, 0, 0, 1);
 }
 
@@ -152,12 +166,16 @@ input[type="radio"].visually-hidden {
 
 .search-form__input:focus ~ .search-form__button {
   position: relative;
+  z-index: 25;
+  top: 0;
+  right: 0;
   width: 80px;
   height: 49px;
   margin: 0;
   padding: 0;
   border: 2px solid #000000;
   overflow: visible;
+  clip: auto;
 }
 
 .search-form__label::after {
@@ -1431,6 +1449,10 @@ input[type="radio"].visually-hidden {
   color: rgba(70, 70, 70, 0.4);
 }
 
+.write-us__input::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .write-us__input:hover {
   background-color: rgba(229, 229, 229, 0.8);
 }
@@ -1446,6 +1468,10 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us__input:focus:-ms-input-placeholder {
+  color: #000000;
+}
+
+.write-us__input:focus::placeholder {
   color: #000000;
 }
 
@@ -1519,6 +1545,7 @@ input[type="radio"].visually-hidden {
   height: 560px;
   margin-left: -480px;
   background: url(../img/map-big.jpg) no-repeat;
+  background-color: #ffffff;
   background-size: cover;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   opacity: 0;

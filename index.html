@@ -20,7 +20,7 @@
             <label class="search-form__label" for="search-form__input_search">
               <span class="visually-hidden">Поиск по сайту</span>
             </label>
-            <button class="search-form__button visually-hidden" type="submit" name="search">Найти</button>
+            <button class="search-form__button visually-hidden" type="button" name="search">Найти</button>
           </form>
           <ul class="user-menu">
             <li class="user-menu__item user-menu__item_login">
@@ -330,12 +330,18 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="write-us__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="write-us__label" for="write-us__input_name">Ваше имя:</label>
-          <label class="write-us__label" for="write-us__input_email">Ваш e-mail:</label>
-          <input class="write-us__input write-us__input_name" type="text" id="write-us__input_name" name="name" placeholder="Имя Фамилия">
-          <input class="write-us__input write-us__input_email" type="email" id="write-us__input_email" name="email" placeholder="email@example.com">
-          <label class="write-us__label" for="write-us__textarea_letter">Текст письма:</label>
-          <textarea class="write-us__textarea write-us__input" id="write-us__textarea_letter" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+          <div class="write-us__input_wrapper">
+            <label class="write-us__label" for="write-us__input_name">Ваше имя:</label>
+            <input class="write-us__input write-us__input_name" type="text" id="write-us__input_name" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="write-us__input_wrapper">
+            <label class="write-us__label" for="write-us__input_email">Ваш e-mail:</label>
+            <input class="write-us__input write-us__input_email" type="email" id="write-us__input_email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="write-us__input_wrapper">
+            <label class="write-us__label" for="write-us__textarea_letter">Текст письма:</label>
+            <textarea class="write-us__textarea write-us__input" id="write-us__textarea_letter" name="letter" placeholder="В свободной форме" cols="30" rows="10"></textarea>
+          </div>
           <button class="write-us__btn" type="submit" name="send">Отправить</button>
         </form>
       </section>
